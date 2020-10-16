@@ -1,0 +1,85 @@
+.header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+
+  justify-content: space-between;
+  &__picture {
+    height: 5.9rem;
+    width: 21rem;
+    margin-top: 3rem;
+    margin-right: auto;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__user {
+    padding-right: 3rem;
+  }
+
+  &__nav {
+    display: flex;
+    color: $color-user;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__icon {
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+    fill: $color-user;
+    &-dropdown {
+      margin-top: 1rem;
+      width: 2em;
+      height: 1em;
+      fill: $color-user;
+    }
+  }
+
+  &__dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__menu {
+    margin-right: 2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+
+    background-color: $color-user;
+    height: 2px;
+    width: 2.2rem;
+
+    &-link {
+      cursor: pointer;
+      margin-top: -0.5rem;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      background-color: $color-user;
+      height: 2px;
+      width: 2.2rem;
+      display: block;
+    }
+    &::before {
+      transform: translateY(-0.65rem);
+    }
+    &::after {
+      transform: translateY(0.45rem);
+    }
+  }
+}

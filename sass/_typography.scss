@@ -1,0 +1,22 @@
+.heading {
+  color: $color-user;
+
+  &-1 {
+    color: white;
+    text-shadow: 0 2px 5px #000 !important;
+    font-size: 6rem;
+
+    font-weight: 300;
+    margin-bottom: 3.5rem;
+    margin-right: 2rem;
+  }
+  &-2 {
+    font-size: 1.7rem;
+    font-weight: 900;
+  }
+
+  &__language {
+    padding-left: 1rem;
+    margin-top: 0.75rem;
+  }
+}

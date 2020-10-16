@@ -1,0 +1,70 @@
+.search {
+  display: grid;
+
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+
+  &__container {
+    height: 100%;
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    z-index: 1;
+  }
+
+  &__picture {
+    width: 100%;
+    height: 45rem;
+    object-fit: cover;
+  }
+
+  img {
+    width: 100%;
+    height: 45rem;
+    object-fit: cover;
+  }
+
+  &__podatki {
+    grid-row: 1/2;
+    grid-column: 3/8;
+    z-index: 2;
+  }
+
+  &__list {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  &__link {
+    &-2 {
+      &:link,
+      &:visited {
+        padding: 0.5rem 1rem !important;
+      }
+    }
+    &:link,
+    &:visited {
+      padding: 0.5rem 3.5rem;
+      font-weight: 300;
+      height: 100%;
+      color: white;
+      text-decoration: none;
+      display: block;
+      background-color: rgb(0, 70, 130);
+    }
+  }
+
+  &__heading {
+    grid-row: 2/3;
+    grid-column: 3/9;
+    z-index: 2;
+    text-align: center;
+  }
+}
